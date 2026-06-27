@@ -39,7 +39,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+     policy.WithOrigins(
+    "http://localhost:5173",
+    "https://clinic-booking-frontend-puce.vercel.app"
+)
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
