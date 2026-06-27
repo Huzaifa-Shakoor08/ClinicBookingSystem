@@ -9,8 +9,7 @@ namespace ClinicBookingSystem.Models
         public int SlotId { get; set; }
         public string Status { get; set; } = "Pending";
         public string? Notes { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public User? Patient { get; set; }
         public Doctor? Doctor { get; set; }
         public TimeSlot? TimeSlot { get; set; }

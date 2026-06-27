@@ -8,8 +8,7 @@ namespace ClinicBookingSystem.Models
         public string Email { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public Doctor? Doctor { get; set; }
         public ICollection<Appointment>? Appointments { get; set; }
     }
