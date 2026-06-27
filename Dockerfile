@@ -5,11 +5,6 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 COPY ["ClinicBookingSystem.csproj", "."]
-RUN dotnet restore
+RUN dotnet restore --no-cache
 COPY . .
-RUN dotnet publish -c Release -o /app/publish
-
-FROM base AS final
-WORKDIR /app
-COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "ClinicBookingSystem.dll"]
+RUN dotnet
