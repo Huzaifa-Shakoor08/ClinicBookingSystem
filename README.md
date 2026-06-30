@@ -15,7 +15,7 @@
 ### Login Page
 ![Login](./Screenshots/login.png)
 
-### Login Mobile View
+### Login - Mobile View
 ![Login Mobile](./Screenshots/login-mobile.png)
 
 ### Patient Dashboard
