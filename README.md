@@ -16,7 +16,8 @@
 ![Login](./Screenshots/login.png)
 
 ### Login - Mobile View
-![Login Mobile](./Screenshots/login-mobile.png)
+### Login - Mobile View
+<img src="./Screenshots/login-mobile.png" width="300">
 
 ### Patient Dashboard
 ![Patient Dashboard](./Screenshots/patient-dashboard.png)
